@@ -36,8 +36,8 @@ html, body{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-  }
-  
+  } 
+
   ul {
     list-style-type: none;
   }
@@ -45,6 +45,7 @@ html, body{
   h1 {
     font-family: var(--Livvic);
     font-size: 2.5rem;
+    text-align: center;
   }
   
   h2 {
@@ -112,7 +113,7 @@ html, body{
   
   .container {
     margin: 0 5vw;
-    padding-top: 1rem;
+    padding-top: 1rem; 
   }
   
   .text-gray {
@@ -124,7 +125,7 @@ html, body{
     color: var(--text-light);
   }
   
-  /* ------x------- Global Classes -------x-------*/
+  /* -----X----- Global Classes -----X-----*/
   
   .section {
     position: relative;
@@ -173,7 +174,7 @@ html, body{
     opacity: 0.4;
   }
   
-  /* --------------- navbar ----------------- */
+  /* --------------- Navbar ----------------- */
   
   .nav {
     padding: 0 2rem;
@@ -248,14 +249,13 @@ html, body{
     }
   }
   
-  /* -------x------- navbar ---------x------- */
+  /* -----X----- navbar -----X----- */
   
   /* ----------------- Main Content----------- */
   
   /* --------------- Site title ---------------- */
   
-  main .site-title {
-    /* background: url('../assets/Background-image.png'); */
+  main .site-title { 
     background-size: cover;
     height: 25vh;
     display: flex;
@@ -268,11 +268,7 @@ html, body{
       padding-top: 2rem;
       text-align: center;
       color: var(--white);
-    }
-  
-    h1 {
-      margin: .3rem;
-    }
+    } 
   }
   
   h3 {
@@ -290,57 +286,68 @@ html, body{
         color: var(--white);
       }
     }
-  
-    .blog {
-      // background: url('../assets/geoart.png'); 
-      // background-repeat: no-repeat;
-      // background-position: left;
-      width: 100%;
-      background-size: 45%;
-      height: 78vh; 
 
-      h1 { 
-        text-align: center;
-      } 
-    }
-  
-    .middle-con {
-      background-image: url('../assets/beach.png');
-      background-repeat: no-repeat;
-      background-position: center;
-      background-attachment: fixed;
-      background-size: 100%;
-      height: 50vh;
-      width: 100%;
-      color: #0b0b0b;
+    .con-sm {     
       text-align: center;
       font-family: var(--Anton);
+
+        div {
+          background-image: url('../assets/beach.png');
+          background-repeat: no-repeat;
+          background-position: center;
+          background-attachment: fixed;
+          background-size: 100%; 
+          width: 100%;
+          padding: 40px; 
+        }
+
+        .img-fx {
+          height: 320px;
+        }
+
+        .btn { 
+          border: 1.6px solid #6f9ba6;
+          background-color: #6f9ba6;
+          color: white;
+          margin-top: 3%;
+
+          &:hover {
+            border: 1.6px solid #6f9ba6;
+            background-color: transparent;
+            color: black;
+          }
+        }
     }
   }
+    
+
+  /* -----X----- Site title -----X----- */
   
-  /* --------x------ Site title --------x------- */
-  
-  /* --------------- Blog Carousel ------------ */
-  
-  /* .middle-con img:hover { 
-      transform: scale(1.3);
-      transition: all 1s ease;
-  } */
-  
+  /* --------------- Carousel ------------ */ 
+
+  .blog { 
+    width: 100%;
+    background-size: 45%;
+    height: 78vh;   
+  } 
+
+  hr {    
+    width: 10%; 
+    border: 1.7px solid  var(--midnight);
+    margin-top: 3%;
+  }
+
   .middle-txt button {
-    border: 1.6px solid #262626;
-    background-color: transparent;
+    border: 1.6px solid #368091;
+    background-color: var(--midnight);
+    color: white;
   
     &:hover {
       border: 1.6px solid #2c6b79;
-      background-color: #2c6b79;
+      background-color: transparent;
+      color: black;
     }
-  }
-  
-  main .middle-txt {
-    padding: 83px;
-    color: #262626;
-  }
+  } 
   
   .middle-txt p {
     color: #262626;
@@ -348,16 +355,18 @@ html, body{
   
   main {
     
-    .about-area {
-      height: 50vh;
-      padding-top: 4vh;
+    .about-area { 
       display: flex;
 
       .about-info {
-        width: 70vh;
+        width: 50vh;
+        margin: 1% 1% 5%;
+        background-color: #f2f2f2db;
+        padding: 4%;
+        border-radius: 14px;
 
         h3 {
-          color: grey;
+          color: #373535;
         }
       }
 
@@ -376,8 +385,7 @@ html, body{
       text-align: center;
       width: 80%;
       margin: 3rem 2rem;
-      box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
-      // border-radius: 5px;
+      box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2); 
     }
   
     .blog-content {
@@ -394,6 +402,7 @@ html, body{
   
       span {
         display: block;
+        margin-bottom: 1rem;
       }
     }
   }
@@ -446,7 +455,7 @@ html, body{
     outline: none;
   }
   
-  /* -------x------- Blog Carousel -----x------ */
+  /* -----X----- Blog Carousel -----X----- */
   
   /* ---------------- Site Content ----------------*/
   
@@ -604,13 +613,13 @@ html, body{
     }
   }
   
-  /* -------x-------- Site Content --------x-------*/
+  /* -----X------ Site Content -----X------*/
   
   /* --------------- Sidebar ----------------------- */
   
-  /* -------x------- Sidebar -----------x----------- */
+  /* -----X----- Sidebar -----X------ */
   
-  /* ---------x------- Main Content -----x----- */
+  /* ------X------ Main Content --------X-------- */
   
   /* ----------------- Footer --------------------- */
   
@@ -665,19 +674,23 @@ html, body{
         }
       }
     }
-
-    input[type=text], select, textarea {
-      width: 100%;
-      padding: 12px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      box-sizing: border-box;
-      margin-top: 6px;
-      margin-bottom: 16px;
-      font-family: var(--Livvic);
-      resize: vertical;
-    }
     
+    .news {
+      p {
+        margin-top: 2px;
+      }
+      
+      a:hover {
+        color: var(--midnight);
+      }
+    }
+
+    
+    form label {
+      font-family: var(--Livvic);
+      color: var(--text-light);
+    }
+
     input[type=submit] {
       background-color: #222;
       color: white;
@@ -693,23 +706,20 @@ html, body{
       }
     }
     
-    form label {
+    input[type=text], select, textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-top: 6px;
+      margin-bottom: 16px;
       font-family: var(--Livvic);
-      color: var(--text-light);
+      resize: vertical;
     }
-    
-    .news {
-      p {
-        margin-top: 2px;
-      }
-      
-      a:hover {
-        color: var(--midnight);
-      }
-    }
-  }
-  
-  /* ---------x------- Footer ----------x---------- */
+  } 
+
+  /* ------X------ Footer -------X--------- */
   
   /*              Viewport less then or equal to 1130px            */
   
