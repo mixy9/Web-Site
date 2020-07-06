@@ -361,22 +361,23 @@ html, body{
 
       .about-info {
         width: 50vh;
-        margin: 1% 1% 5%;
+        margin: 6% 3% 6% 3%;
         background: radial-gradient(#f9f9f9 70%, #f4f4f4 90%);
-        padding: 6%; 
+        padding: 5%; 
+        display: inline-flex;
 
         h3 {
           color: var(--mid-dark);
           text-transform: uppercase;
         }
-      }
 
-      .about-photo {  
-        img {
-          width: 70vh;
-          height: 40vh;
-          padding-left: 8vh;
+        .fas {
+          color: var(--text-light);
         }
+
+        span {
+          margin-right: 15px;
+        }  
       }
     }
   

@@ -13,6 +13,7 @@ html, body {
   --white: #ffffff;
   --midnight: #368091;
   --mid-light: #89c3d0;
+  --mid-dark: #6f9ba6;
   --sky: linear-gradient(120deg, #47b0ba 10%, #c2e9fb 100%);
   --Livvic: 'Livvic', cursive;
   --Oswald: 'Oswald', cursive;
@@ -62,16 +63,16 @@ h4 {
   color: white;
 }
 
-button.btn {
+button {
   border: none;
-  border-radius: 2rem;
+  border-radius: 0.2rem;
   padding: 0.8rem 2.8rem;
   font-size: 1.2rem;
   font-family: var(--Livvic);
   cursor: pointer;
 }
 
-button.btn:hover {
+button:hover {
   background-color: transparent;
   border: 1px solid white;
   color: white;
@@ -324,16 +325,16 @@ main .con-sm .img-fx {
 }
 
 main .con-sm .btn {
-  border: 1.6px solid #6f9ba6;
-  background-color: #6f9ba6;
+  border: 1.6px solid var(--mid-dark);
+  background-color: var(--mid-dark);
   color: white;
   margin-top: 3%;
 }
 
 main .con-sm .btn:hover {
-  border: 1.6px solid #6f9ba6;
+  border: 1.6px solid var(--mid-dark);
   background-color: transparent;
-  color: black;
+  color: var(--mid-dark);
 }
 
 /* -----X----- Site title -----X----- */
@@ -346,7 +347,7 @@ main .con-sm .btn:hover {
 
 hr {
   width: 10%;
-  border: 1.7px solid var(--midnight);
+  border: 1.7px solid var(--mid-dark);
   margin-top: 3%;
 }
 
@@ -374,20 +375,25 @@ main .about-area {
 
 main .about-area .about-info {
   width: 50vh;
-  margin: 1% 1% 5%;
-  background-color: #f2f2f2db;
-  padding: 4%;
-  border-radius: 14px;
+  margin: 6% 3% 6% 3%;
+  background: radial-gradient(#f9f9f9 70%, #f4f4f4 90%);
+  padding: 5%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
 }
 
 main .about-area .about-info h3 {
-  color: #373535;
+  color: var(--mid-dark);
+  text-transform: uppercase;
 }
 
-main .about-area .about-photo img {
-  width: 70vh;
-  height: 40vh;
-  padding-left: 8vh;
+main .about-area .about-info .fas {
+  color: var(--text-light);
+}
+
+main .about-area .about-info span {
+  margin-right: 15px;
 }
 
 main .blog-post .blog-content {
@@ -409,11 +415,16 @@ main .blog-content .blog-title {
   padding: 2rem 0 3rem 0;
 }
 
-main .blog-content .btn-blog {
-  padding: .7rem 2rem;
-  background: var(--mid-light);
+main .blog-content .btn {
+  background: var(--mid-dark);
   margin-top: 1.5rem;
   color: white;
+  border: 1px solid var(--mid-dark);
+}
+
+main .blog-content .btn:hover {
+  color: var(--mid-dark);
+  background: white;
 }
 
 main .blog-content span {
@@ -707,8 +718,8 @@ footer.footer input[type=submit] {
 }
 
 footer.footer input[type=submit]:hover {
-  background-color: var(--midnight);
-  border: 1px solid var(--midnight);
+  background-color: var(--mid-dark);
+  border: 1px solid var(--mid-dark);
 }
 
 footer.footer input[type=text], footer.footer select, footer.footer textarea {
