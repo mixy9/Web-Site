@@ -25,10 +25,10 @@
 <body>
 
     <!-- Welcome screen -->
-    <div class="section">
-
+    <header>
+        <!-- Navigation -->
         <nav class="nav">
-            <div class="nav-menu flex-row">
+            <div class="nav-menu flex-box">
                 <div class="nav-brand">
                     <a href="#">travel.com</a>
                 </div>
@@ -43,13 +43,13 @@
                             <a href="#">Home</a>
                         </li>
                         <li class="nav-link">
-                            <a href="#">Category</a>
+                            <a href="#">About</a>
                         </li>
                         <li class="nav-link move-archive">
                             <a href="#">Archive</a>
                         </li>
-                        <li class="nav-link">
-                            <a href="#">Pages</a>
+                        <li class="nav-link move-portfolio">
+                            <a href="#">Portfolio</a>
                         </li>
                         <li class="nav-link move-down">
                             <a href="#">Contact</a>
@@ -59,7 +59,8 @@
             </div>
         </nav>
 
-        <section class="site-title">
+        <!-- Title -->
+        <section>
             <div class="title-sec" data-aos="fade-up" data-aos-delay="100">
                 <h2>Tours & Travels</h2>
                 <h1>Discover Amazing Places</h1>
@@ -68,39 +69,39 @@
         </section>
 
         <!--- Video --->
-        <div class="video-container">
+        <section class="video-container">
             <div class="color-overlay"></div>
             <video autoplay loop muted>
                 <source src="assets/video2.mp4" type="video/mp4">
             </video>
-        </div>
-    </div>
+        </section>
+    </header>
 
+    <!-- Main content-->
     <main>
-
         <!-- About area-->
         <section>
-            <div class="about-area">
-                <div class="about-info">
+            <div class="flex-box">
+                <div>
                     <span><i class="fas fa-chevron-right fa-3x"></i></span>
                     <h3>Neque voluptas beatae.</h3>
                 </div>
-                <div class="about-info">
+                <div>
                     <span><i class="fas fa-chevron-right fa-3x"></i></span>
                     <h3>Traveling With Passion.</h3>
                 </div>
-                <div class="about-info">
+                <div>
                     <span><i class="fas fa-chevron-right fa-3x"></i></span>
-                    <h3>Adipisci iusto totam placeat.</h3>
+                    <h3>Adipisci iusttro etotam.</h3>
                 </div>
             </div>
         </section>
 
         <!-- Middle Content -->
-        <section id="archive">
+        <section>
             <div class="mid-section">
-                <h1>5 Best places To Visit On Earth</h1>
-                <h3>Neque voluptas deserunt beatae adipisci iusto totam
+                <h1 data-aos="fade-right">5 Best places To Visit On Earth</h1>
+                <h3 data-aos="fade-left">Neque voluptas deserunt beatae adipisci iusto totam
                     placeat corrupti ipsum.
                 </h3>
                 <button class="btn">Book a Tour Now</button>
@@ -108,7 +109,7 @@
         </section>
 
         <!-- Carousel -->
-        <section>
+        <section id="archive">
             <div class="blog">
                 <div class="container">
                     <div class="owl-carousel owl-theme blog-post">
@@ -170,20 +171,160 @@
         </section>
 
         <!-- Site Content -->
-        <!-- <section class="container">  
-        </section> -->
+        <section id="portfolio">  
+            <div class="portfolio">
+                <div  class="portfolio-items-wrapper">
+                    <div>
+                        <div class="portfolio-img-background" style="background-image:url(assets/portfolio1.jpg)"></div>
+            
+                        <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="./assets/logos/quip.png" alt="">
+                        </div>
+            
+                        <div class="subtitle">I built the Quip Ecommerce platform, named a Top 25 Invention by Time Magazine in 2016.</div>
+                        </div>
+                    </div>
+            
+                    <div>
+                        <div class="portfolio-img-background" style="background-image:url(assets/portfolio2.jpg)"></div>
+                        <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="assets/logos/devcamp.png" alt="">
+                        </div>
+            
+                        <div class="subtitle">Coding bootcamp and learning management system.</div>
+                        </div>
+                    </div>
+            
+                    <div>
+                        <div class="portfolio-img-background" style="background-image:url(assets/portfolio3.jpg)"></div>
+                        <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="assets/logos/eventbrite.png" alt="">
+                        </div>
+            
+                        <div class="subtitle">Eventbrite is the leading event management platform on the web with millions of individuals utilizing their applications
+                            to find, register or, and management events in numerous industries.</div>
+                        </div>
+                    </div>
+            
+                    <div>
+                        <div class="portfolio-img-background" style="background-image:url(assets/portfolio4.jpg)"></div>
+                        <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="assets/logos/shop-hacker.png" alt="">
+                        </div>
+            
+                        <div class="subtitle">Shop Hacker allows you to easily import digital products such as elearning courses, software, and games directly
+                            into your ecommerce store.</div>
+                        </div>
+                    </div>
+            
+                    <div>
+                        <div class="portfolio-img-background" style="background-image:url(assets/portfolio5.jpg)"></div>
+                        <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="assets/logos/crondose.png" alt="">
+                        </div>
+            
+                        <div class="subtitle">Online tutorials and productivity tips.</div>
+                        </div>
+                    </div>
+            
+                    <div>
+                        <div class="portfolio-img-background" style="background-image:url(assets/portfolio6.jpg)"></div>
+                        <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="assets/logos/dailysmarty.png" alt="">
+                        </div>
+            
+                        <div class="subtitle">Keep track of what you learn every day.</div>
+                        </div>
+                    </div>
+            
+                    <div>
+                        <div class="portfolio-img-background" style="background-image:url(assets/portfolio7.jpg)"></div>
+                        <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="assets/logos/dashtrack.png" alt="">
+                        </div>
+            
+                        <div class="subtitle">What you track improves. DashTrack is a journal that makes it easy to track your daily tasks and make the most
+                            of your time each day.</div>
+                        </div>
+                    </div>
+            
+                    <div>
+                        <div class="portfolio-img-background" style="background-image:url(assets/portfolio8.jpg)"></div>
+                        <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="assets/logos/devtrunk.png" alt="">
+                        </div>
+            
+                        <div class="subtitle">Online shop for developer happiness.</div>
+                        </div>
+                    </div>
+            
+                    <div>
+                        <div class="portfolio-img-background" style="background-image:url(assets/portfolio9.jpg)"></div>
+                        <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="assets/logos/edutechional.png" alt="">
+                        </div>
+            
+                        <div class="subtitle">Online technology tutorials.</div>
+                        </div>
+                    </div>
+            
+                    <div>
+                        <div class="portfolio-img-background" style="background-image:url(assets/portfolio10.jpg)"></div>
+                        <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="assets/logos/ministry-safe.png" alt="">
+                        </div>
+            
+                        <div class="subtitle">A complete child safety system for organizations.</div>
+                        </div>
+                    </div>
+            
+                    <div>
+                        <div class="portfolio-img-background" style="background-image:url(assets/portfolio11.jpg)"></div>
+                        <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="assets/logos/open-devos.png" alt="">
+                        </div>
+            
+                        <div class="subtitle">Publish and share daily devotionals.</div>
+                        </div>
+                    </div>
+            
+                    <div>
+                        <div class="portfolio-img-background" style="background-image:url(assets/portfolio12.jpg)"></div>
+                        <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="assets/logos/toastability.png" alt="">
+                        </div>
+            
+                        <div class="subtitle">Easy way to manage the digital life of your bar or restaurant.</div>
+                        </div>
+                    </div>
         
+                </div>
+            </div>
+        </section>  
     </main>
 
-    <footer class="footer">
-        <div class="container">
+    <!-- Footer -->
+    <footer>
+        <div class="container flex-box" data-aos="flip-up">
             <div class="quest">
-                <h2>Ask us anything</h2>
+                <h2>Ask me anything</h2>
                 <form action="#">
                     <label for="fname">Your Name</label>
                     <input type="text" id="fname" name="firstname" placeholder="ex. Mihaela">
 
-                    <label for="fname">E-mail</label>
+                    <label for="femail">E-mail</label>
                     <input type="text" id="fname" name="firstname" placeholder="ex. mihaela@email.com">
 
                     <label for="subject">Question</label>
@@ -211,17 +352,17 @@
             <div class="follow">
                 <h2>Follow me</h2>
                 <div class="social">
-                    <a href=""><i class="fab fa-facebook-f"></i></a>
-                    <a href=""><i class="fab fa-instagram"></i></a>
-                    <a href=""><i class="fab fa-github"></i></a>
-                    <a href=""><i class="fab fa-linkedin"></i></a>
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/miickey_999/?hl=hr" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://github.com/mixy9?tab=repositories" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/mihaela-trempeti%C4%87-40239317b/" target="_blank"><i class="fab fa-linkedin"></i></a>
                 </div>
             </div>
         </div>
-        <div class="rights flex-row">
-            <h5 class="text-gray">
+        <div class="rights">
+            <h5>
                 Copyright ©2020 All rights reserved | made by
-                <a href="https://www.instagram.com/miickey_999/?hl=hr" target="_black">Mihaela Trempetić <i
+                <a href="https://www.instagram.com/miickey_999/?hl=hr" target="_blank">Mihaela Trempetić <i
                         class="fab fa-instagram"></i>
                     Instagram</a>
             </h5>
@@ -232,7 +373,7 @@
     </footer>
 
     <script src="./js/Jquery3.4.1.min.js"></script>
-    <script src="./js/owl.carousel.min.js"></script>
+    <script src="./js/owl.carousel.min.js"></script> 
     <script src="./js/aos.js"></script>
     <script src="./js/main.js"></script>
 

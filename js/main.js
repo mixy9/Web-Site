@@ -5,11 +5,14 @@ const responsive = {
     320: {
         items: 1
     },
-    560: {
+    760: {
         items: 2
     },
-    960: {
+    990: {
         items: 3
+    },
+    1600: {
+        items: 4
     }
 }
 
@@ -47,6 +50,12 @@ $(document).ready(function () {
     $('.move-archive').click(function () {
         $('html, body').animate({ 
             scrollTop: $("#archive").offset().top
+        }, 800);
+    })
+
+    $('.move-portfolio').click(function () {
+        $('html, body').animate({ 
+            scrollTop: $("#portfolio").offset().top
         }, 800);
     })
 
