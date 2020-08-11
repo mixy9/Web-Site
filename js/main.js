@@ -7,12 +7,9 @@ const responsive = {
     },
     760: {
         items: 2
-    },
-    990: {
-        items: 3
-    },
+    }, 
     1600: {
-        items: 4
+        items: 3
     }
 }
 
